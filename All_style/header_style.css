@@ -1,0 +1,128 @@
+/* ================================================ HEADER =================================================== */
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  width: 100vw;
+  padding: 10px 0;
+  background-color: var(--background_color-main);
+}
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* ================ LOGO ================ */
+
+.header__logo .logo__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__logo .logo__img {
+  width: 25%;
+  margin-right: 10px;
+}
+
+.header__logo .logo__text {
+  text-align: left;
+}
+
+.header__logo .logo__text--top {
+  font-family: "Sawarabi Mincho";
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--logo_text_color);
+  margin-bottom: 5px;
+}
+
+.header__logo .logo__text--bottom {
+  font-family: "Kosugi Maru";
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--logo_text_color);
+  letter-spacing: 1px;
+}
+
+/* HOVER ANIMATIONS */
+.header__logo:hover .logo__img {
+  transform: scale(1.15);
+}
+.header__logo:hover .logo__text {
+  color: #fff;
+  text-shadow: 0 0 10px var(--menu_text_color), 0 0 1px var(--menu_text_color),
+    0 0 1px var(--menu_text_color), 0 0 1px var(--menu_text_color);
+}
+
+/* ================ NAVIGATION ================ */
+.header__nav {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__nav .nav__item {
+  padding: 5px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__nav .nav__icon {
+  width: 10%;
+  margin-right: 10px;
+  transition: 0.5s;
+}
+
+.header__nav .nav__text {
+  position: relative;
+  padding: 5px 0;
+  font-family: "M PLUS Rounded 1c";
+  letter-spacing: 2px;
+  color: var(--menu_text_color);
+  font-size: 0.8rem;
+}
+.header__nav .nav__text::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: var(--menu_text_color);
+  border-radius: 1px;
+  transition: 0.5s;
+}
+
+.nav__item:hover .nav__icon {
+  transform: scale(1.9);
+}
+.nav__item:hover .nav__text::before {
+  width: 100%;
+}
+
+/* ================ ACTION ================ */
+.header__actions {
+  width: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__actions .actions__item {
+  width: 25%;
+}
+
+.header__actions .actions__icon {
+  width: 100%;
+}
+
+/* HOVER ANIMATIONS */
+
+.actions__item:hover .actions__icon {
+  transform: scale(1.2);
+}
