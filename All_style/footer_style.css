@@ -1,0 +1,237 @@
+.footer {
+  padding: 50px 0 20px;
+  background-color: var(--background_color-extra);
+}
+.footer_wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+/************** FOOTER LEFT **************/
+.footer_left {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+}
+
+/* ================ LOGO ================ */
+
+.footer__logo .logo__link {
+  display: flex;
+  align-items: center;
+}
+
+.footer__logo .logo__img {
+  width: 30%;
+  margin-right: 10px;
+}
+
+.footer__logo .logo__text {
+  text-align: left;
+}
+
+.footer__logo .logo__text--top {
+  font-family: "Sawarabi Mincho";
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--logo_text_color);
+  margin-bottom: 5px;
+}
+
+.footer__logo .logo__text--bottom {
+  font-family: "Kosugi Maru";
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--logo_text_color);
+  letter-spacing: 1px;
+}
+
+/* HOVER ANIMATIONS */
+.footer__logo:hover .logo__img {
+  transform: scale(1.15);
+}
+.footer__logo:hover .logo__text {
+  color: #fff;
+  text-shadow: 0 0 10px var(--menu_text_color), 0 0 1px var(--menu_text_color),
+    0 0 1px var(--menu_text_color), 0 0 1px var(--menu_text_color);
+}
+
+.footer_desc {
+  line-height: 30px;
+  color: var(--menu_text_color);
+  letter-spacing: 2px;
+  font-size: 1rem;
+}
+
+.footer_info {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+}
+
+.footer_title {
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: var(--menu_text_color);
+  letter-spacing: 5px;
+}
+
+.footer_info b {
+  margin-right: 5px;
+  color: var(--menu_text_color);
+  font-size: 1rem;
+}
+
+.footer_info p {
+  color: var(--menu_text_color);
+  font-size: 0.8rem;
+}
+.footer_info a {
+  color: var(--logo_text_color);
+  font-size: 0.8rem;
+}
+
+.footer_map {
+  width: 30%;
+  text-align: center;
+  padding: 10px 20px;
+  font-weight: bold;
+  color: var(--menu_text_color);
+  border-radius: 10px;
+  background-color: var(--logo_text_color);
+}
+.footer_map:hover {
+  transform: scale(1.05);
+}
+.footer_map:active {
+  background-color: var(--menu_text_color);
+  color: var(--background_color-main);
+}
+
+/************** FOOTER RIGHT **************/
+.footer_right {
+  width: 55%;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  color: var(--menu_text_color);
+}
+
+.footer_column {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+}
+
+.footer_column:nth-of-type(3) {
+  width: 25%;
+  align-items: center;
+}
+
+.footer_column-title {
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+a.footer_column-desc {
+  position: relative;
+  padding: 5px 10px 5px 0;
+}
+a.footer_column-desc::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0%;
+  height: 2px;
+  background-color: var(--menu_text_color);
+  border-radius: 1px;
+  transition: 0.5s;
+}
+
+a.footer_column-desc:hover {
+  color: var(--menu_text_color);
+}
+
+a.footer_column-desc:hover::before {
+  width: 100%;
+}
+.footer_column-desc {
+  font-size: 0.9rem;
+  color: var(--logo_text_color);
+}
+
+/* footer_icon */
+.footer_column-box {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer_column-box a {
+  width: 100%;
+}
+.footer_icon.facebook,
+.footer_icon.instagram,
+.footer_icon.x {
+  color: var(--logo_text_color);
+}
+.footer_icon.facebook:hover {
+  transform: scale(1.1);
+  color: #1877f2;
+}
+.footer_icon.instagram:hover {
+  transform: scale(1.1);
+  color: #e1306c;
+}
+.footer_icon.x:hover {
+  transform: scale(1.1);
+  color: #000;
+}
+
+.footer_pay-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.footer_pay-item {
+  width: 20%;
+}
+
+.footer_pay-item:hover {
+  transform: scale(1.5);
+}
+
+.footer_pay-icon {
+  width: 100%;
+}
+.footer_pay-text {
+  margin-top: 5px;
+  font-size: 0.4rem;
+  text-align: center;
+}
+.coppyright {
+  position: relative;
+  margin-top: 50px;
+  display: block;
+  font-size: 0.8rem;
+  text-align: center;
+  color: var(--logo_text_color);
+}
+
+.coppyright::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 25%;
+  display: block;
+  width: 50%;
+  height: 2px;
+  background-color: var(--logo_text_color);
+}
