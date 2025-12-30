@@ -76,6 +76,7 @@
     <!------- link CSS ------->
     <!-- Header CSS -->
     <link rel="stylesheet" href="All_style/header_style.css" />
+    <link rel="stylesheet" href="All_style/header_responsive.css">
     <!-- Body CSS -->
     <link rel="stylesheet" href="home/style/home_body.css" />
     <!-- Footer CSS -->
@@ -100,6 +101,91 @@
     <!---------------------------------------------------------------- HEADER ------------------------------------------------------------------->
     <header class="header">
       <div class="container">
+        <!-- Mobile Nav -->
+        <svg class="mobile_nav_icon" viewBox="0 0 640 640"><path fill = "currentColor" d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z"/></svg>
+        <div class="mobile_nav-wrap">
+          <span class="mobile_nav-backdrop">
+            <div class="mobile_nav-content">
+              <div class="mobile_nav-top">
+                <button id="closeBtn">&times;</button>
+                <div class="header__logo">
+                  <div class="logo__link">
+                    <img src="home/icon/Logo.webp" alt="logo" class="logo__img" />
+                    <div class="logo__text">
+                      <p class="logo__text--top">尚美</p>
+                      <p class="logo__text--bottom">カフェテリア</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <span class="mobile_nav-line"></span>
+              <ul class="mobile_nav-list">
+                <!-- Home -->
+                <a href="#!">
+                  <li class="nav__item">
+                    <img
+                      src="home/icon/home-home_logo.webp"
+                      alt=""
+                      class="nav__icon"
+                    />
+                    <p class="nav__text text_overflow">ホーム</p>
+                  </li>
+                </a>
+
+                <!-- Menu -->
+                <a href="#!">
+                  <li class="nav__item">
+                    <img
+                      src="home/icon/menu-menu_logo.webp"
+                      alt=""
+                      class="nav__icon"
+                    />
+                    <p class="nav__text text_overflow">メニュー</p>
+                  </li>
+                </a>
+
+                <!-- About -->
+                <a href="#!">
+                  <li class="nav__item">
+                    <img
+                      src="home/icon/menu-about_logo.webp"
+                      alt=""
+                      class="nav__icon"
+                    />
+                    <p class="nav__text text_overflow">店舗紹介</p>
+                  </li>
+                </a>
+
+                <!-- Access -->
+                <a href="#!">
+                  <li class="nav__item">
+                    <img
+                      src="home/icon/menu-access_logo.webp"
+                      alt=""
+                      class="nav__icon"
+                    />
+                    <p class="nav__text text_overflow">アクセス</p>
+                  </li>
+                </a>
+
+                <!-- Contact -->
+                <a href="#!">
+                  <li class="nav__item">
+                    <img
+                      src="home/icon/menu-contact_logo.webp"
+                      alt=""
+                      class="nav__icon"
+                    />
+                    <p class="nav__text text_overflow">お問い合わせ</p>
+                  </li>
+                </a>
+              </ul>
+            </div>
+
+          </span>
+          
+        </div>
+        
         <!---------------------------------- LOGO ---------------------------------->
         <div class="header__logo">
           <a href="#" class="logo__link">
@@ -199,6 +285,7 @@
           </a>
         </div>
       </div>
+      <script src="./All_script/header_script.js"></script>
     </header>
     <!---------------------------------------------------------------- BODY ------------------------------------------------------------------->
     <div class="body">
