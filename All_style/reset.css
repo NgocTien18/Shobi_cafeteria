@@ -170,6 +170,10 @@ li {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+/* tắt bỏ màu khi tapp */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
 /* ================ VARIABLE ================ */
 :root {
   --menu_text_color: #fee4cc;
