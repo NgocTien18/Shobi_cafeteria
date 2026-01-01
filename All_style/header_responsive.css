@@ -84,9 +84,9 @@
     position: absolute; /*position from "mobile_nav-wrap"*/
     left: -100%;
     max-width: calc(100vw - 30%);
-    min-height: 50vh;
+    min-height: 70vh;
     background-color: var(--background_color-extra);
-    padding: 50px 0;
+    padding: 50px 0 100px 0;
     border-radius: 0 0 20px 0;
     box-shadow: var(--menu_text_color) 1.95px 1.95px 10px;
   }
@@ -130,6 +130,7 @@
 
   .nav__item {
     justify-content: flex-start;
+    height: calc(40vh / 5);
     padding: 10px 0;
     border-radius: 5px;
     box-shadow: rgba(33, 35, 38, 0.5) 0px 10px 10px -10px;

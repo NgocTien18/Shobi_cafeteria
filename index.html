@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="jp">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -79,8 +79,10 @@
     <link rel="stylesheet" href="All_style/header_responsive.css">
     <!-- Body CSS -->
     <link rel="stylesheet" href="home/style/home_body.css" />
+    <link rel="stylesheet" href="./home/style/home_body_responsive.css">
     <!-- Footer CSS -->
     <link rel="stylesheet" href="All_style/footer_style.css" />
+    <link rel="stylesheet" href="All_style/footer_responsive.css" />
     
     <!-- Link Animate -->
     <link
@@ -262,21 +264,21 @@
 
         <!---------------------------------- ACTIONS ---------------------------------->
         <div class="header__actions">
-          <a href="#!" class="actions__item">
+          <a href="#!" class="actions__item search">
             <img
               src="home/icon/nav-search_logo.webp"
               alt=""
               class="actions__icon"
             />
           </a>
-          <a href="#!" class="actions__item">
+          <a href="#!" class="actions__item category">
             <img
               src="home/icon/nav-category_logo.webp"
               alt=""
               class="actions__icon"
             />
           </a>
-          <a href="#!" class="actions__item">
+          <a href="#!" class="actions__item user">
             <img
               src="home/icon/nav-user_logo.webp"
               alt=""
@@ -497,13 +499,21 @@
             <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
             <script>
               var swiper = new Swiper(".mySwiper", {
-                slidesPerView: 4,
                 spaceBetween: 30,
                 pagination: {
-                  el: ".swiper-pagination",
+                el: ".swiper-pagination",
                   clickable: true,
                 },
+                breakpoints: {
+                  0: {
+                    slidesPerView: 2,
+                  },
+                  768: {
+                    slidesPerView: 4,
+                  },
+                },
               });
+
             </script>
           </div>
         </div>
@@ -585,13 +595,13 @@
                         <img src="./home/img/feedback_avatar_1.webp" alt="" class="feedback_avatar">
                       </figure>
                       <div class="feedback_info">
-                        <p class="feedback_name">ルォン ゴック ティエン</p>
+                        <p class="feedback_name text_overflow">ティエン</p>
                         <p class="feedback_desc">学生</p>
                       </div>
                     </div>
                     <svg class="feedback_icon" viewBox="0 0 640 640"><path fill="currentColor" d="M544 360C544 426.3 490.3 480 424 480L416 480C398.3 480 384 465.7 384 448C384 430.3 398.3 416 416 416L424 416C454.9 416 480 390.9 480 360L480 352L416 352C380.7 352 352 323.3 352 288L352 224C352 188.7 380.7 160 416 160L480 160C515.3 160 544 188.7 544 224L544 360zM288 360C288 426.3 234.3 480 168 480L160 480C142.3 480 128 465.7 128 448C128 430.3 142.3 416 160 416L168 416C198.9 416 224 390.9 224 360L224 352L160 352C124.7 352 96 323.3 96 288L96 224C96 188.7 124.7 160 160 160L224 160C259.3 160 288 188.7 288 224L288 360z"/></svg>
                   </div>
-                  <p class="feedback_comment">料理の種類が豊富で誰にでも合いますし、さらに価格も安くて学生にぴったりです。本当に素晴らしい食堂で、これからもずっと利用したいと思います。</p>
+                  <p class="feedback_comment text_overflow">料理の種類が豊富で誰にでも合いますし、さらに価格も安くて学生にぴったりです。本当に素晴らしい食堂で、これからもずっと利用したいと思います。</p>
                 </div>
               </swiper-slide>
 
@@ -604,13 +614,13 @@
                         <img src="./home/img/feedback_avatar_2.webp" alt="" class="feedback_avatar">
                       </figure>
                       <div class="feedback_info">
-                        <p class="feedback_name">王 美玲</p>
+                        <p class="feedback_name text_overflow">王 美玲</p>
                         <p class="feedback_desc">学生</p>
                       </div>
                     </div>
                     <svg class="feedback_icon" viewBox="0 0 640 640"><path fill="currentColor" d="M544 360C544 426.3 490.3 480 424 480L416 480C398.3 480 384 465.7 384 448C384 430.3 398.3 416 416 416L424 416C454.9 416 480 390.9 480 360L480 352L416 352C380.7 352 352 323.3 352 288L352 224C352 188.7 380.7 160 416 160L480 160C515.3 160 544 188.7 544 224L544 360zM288 360C288 426.3 234.3 480 168 480L160 480C142.3 480 128 465.7 128 448C128 430.3 142.3 416 160 416L168 416C198.9 416 224 390.9 224 360L224 352L160 352C124.7 352 96 323.3 96 288L96 224C96 188.7 124.7 160 160 160L224 160C259.3 160 288 188.7 288 224L288 360z"/></svg>
                   </div>
-                  <p class="feedback_comment">料理の種類が豊富で誰にでも合いますし、さらに価格も安くて学生にぴったりです。本当に素晴らしい食堂で、これからもずっと利用したいと思います。</p>
+                  <p class="feedback_comment text_overflow">料理の種類が豊富で誰にでも合いますし、さらに価格も安くて学生にぴったりです。本当に素晴らしい食堂で、これからもずっと利用したいと思います。</p>
                 </div>
               </swiper-slide>
 
@@ -623,13 +633,13 @@
                         <img src="./home/img/feedback_avatar_3.webp" alt="" class="feedback_avatar">
                       </figure>
                       <div class="feedback_info">
-                        <p class="feedback_name">佐藤 恒一</p>
+                        <p class="feedback_name text_overflow">佐藤 恒一</p>
                         <p class="feedback_desc">教師</p>
                       </div>
                     </div>
                     <svg class="feedback_icon" viewBox="0 0 640 640"><path fill="currentColor" d="M544 360C544 426.3 490.3 480 424 480L416 480C398.3 480 384 465.7 384 448C384 430.3 398.3 416 416 416L424 416C454.9 416 480 390.9 480 360L480 352L416 352C380.7 352 352 323.3 352 288L352 224C352 188.7 380.7 160 416 160L480 160C515.3 160 544 188.7 544 224L544 360zM288 360C288 426.3 234.3 480 168 480L160 480C142.3 480 128 465.7 128 448C128 430.3 142.3 416 160 416L168 416C198.9 416 224 390.9 224 360L224 352L160 352C124.7 352 96 323.3 96 288L96 224C96 188.7 124.7 160 160 160L224 160C259.3 160 288 188.7 288 224L288 360z"/></svg>
                   </div>
-                  <p class="feedback_comment">料理の種類が豊富で誰にでも合いますし、さらに価格も安くて学生にぴったりです。本当に素晴らしい食堂で、これからもずっと利用したいと思います。</p>
+                  <p class="feedback_comment text_overflow">料理の種類が豊富で誰にでも合いますし、さらに価格も安くて学生にぴったりです。本当に素晴らしい食堂で、これからもずっと利用したいと思います。</p>
                 </div>
               </swiper-slide>
             </swiper-container>
@@ -701,19 +711,19 @@
                 <div class="footer_pay-box">
                   <div class="footer_pay-item">
                     <img src="./home/img/footer_pay-icon_1.webp" alt="" class="footer_pay-icon">
-                    <p class="footer_pay-text">現金</p>
+                    <p class="footer_pay-text text_overflow">現金</p>
                   </div>
                   <div class="footer_pay-item">
                     <img src="./home/img/footer_pay-icon_2.webp" alt="" class="footer_pay-icon">
-                    <p class="footer_pay-text">PayPay</p>
+                    <p class="footer_pay-text text_overflow">PayPay</p>
                   </div>
                   <div class="footer_pay-item">
                     <img src="./home/img/footer_pay-icon_3.webp" alt="" class="footer_pay-icon">
-                    <p class="footer_pay-text">クレジット</p>
+                    <p class="footer_pay-text text_overflow">クレジット</p>
                   </div>
                   <div class="footer_pay-item">
                     <img src="./home/img/footer_pay-icon_4.webp" alt="" class="footer_pay-icon">
-                    <p class="footer_pay-text">ICカード</p>
+                    <p class="footer_pay-text text_overflow">ICカード</p>
                   </div>
                 </div>
               </div>

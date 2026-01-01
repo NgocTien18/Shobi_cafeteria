@@ -1,0 +1,134 @@
+/* MOBILE RESPONSIVE */
+@media screen and (max-width: 767px) {
+  /*************************** HERO ***************************/
+  .hero .container {
+    height: 100%;
+  }
+  .hero_content .hero_title {
+    font-size: 1rem;
+    text-shadow: 1px 1px 1px var(--menu_text_color);
+  }
+  .hero_content .hero_suptitle {
+    font-size: 0.5rem;
+    margin-bottom: 2vh;
+    text-shadow: none;
+  }
+  .hero_content .hero_cta {
+    padding: 10px 50px;
+    font-size: 0.5rem;
+  }
+
+  /*************************** ABOUT ***************************/
+  .about_top--fade {
+    top: -5vh;
+    height: 5vh;
+  }
+  .about .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  /************** ABOUT INFO **************/
+  .about .about_info {
+    padding: 0;
+    width: 100%;
+  }
+  .about_info .about_title {
+    padding: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    font-size: 1.5rem;
+  }
+  .about_info .about_desc {
+    line-height: 1.5;
+    font-size: 0.8rem;
+  }
+
+  .about_info .btn--line-left,
+  .about_info .btn--line-right {
+    display: none;
+  }
+  .about_info .btn--text {
+    padding: 0;
+  }
+
+  .about_info .about__btn--box:hover .btn--text {
+    left: 0;
+  }
+  /************** ABOUT IMAGE **************/
+  .about .about_image {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  /*************************** FEATURED ***************************/
+  .featured .featured_header-title {
+    font-size: 1.3rem;
+    padding-bottom: 0;
+  }
+
+  .featured .swiper-slide {
+    height: 40vh;
+    padding: 20px 10px;
+  }
+  .featured .card_content {
+    height: 40%;
+  }
+  .featured .card_title {
+    font-size: 1rem;
+  }
+
+  /*************************** STAFF ***************************/
+  .staff .staff_title {
+    font-size: 1.3rem;
+  }
+  .staff .staff_content {
+    flex-direction: column;
+    gap: 10vh;
+  }
+  .staff_content .staff_left,
+  .staff_content .staff_right {
+    width: 100%;
+  }
+  .staff_content .staff_card {
+    width: 100%;
+  }
+  .staff_card:hover {
+    transform: scale(1.1);
+  }
+  .staff_content .staff_role {
+    font-size: 1rem;
+  }
+  .staff_content .staff_comment {
+    font-size: 1rem;
+  }
+  /*************************** FEEDBACK ***************************/
+  .feedback {
+    height: 40vh;
+  }
+  .feedback_box {
+    width: 80%;
+    height: 30vh;
+  }
+  .feedback_top {
+    height: 10vh;
+  }
+  .feedback_profile {
+    margin: 0;
+  }
+  .feedback_avatar--box {
+    width: 50px;
+  }
+  .feedback_name {
+    font-size: 1rem;
+  }
+  .feedback_desc {
+    font-size: 0.8rem;
+  }
+  .feedback_comment {
+    line-height: 2;
+    font-size: 0.7rem;
+    -webkit-line-clamp: 4;
+  }
+}
+/* MOBILE RESPONSIVE */
